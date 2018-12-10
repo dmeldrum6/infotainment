@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+			<meta name="description" content="">
+			<meta name="author" content="">
+			<link rel="icon" href="favicon.ico">
+			
+			<title>Infotainment</title>
+			<script src="src/infotainment.js"></script>
+
+			<!-- Bootstrap core -->
+			<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+			<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+			<script>
+				<!-- Start Clock Loop -->
+				setInterval(doDate, 1000);
+			</script>
+	</head>
+
+	<body class="bg-secondary">
+	<!-- Fixed Header Section -->
+		<header>
+			<div class="nav fixed-top bg-secondary">
+				<div class ="container-fluid ">
+					<div class="row">
+						<div class="col">
+							<div class="row">
+								<div class="col-md-1"><image width="35" src="img/iconmonstr-cube-6-240.png"/></div>
+								<div class="col-md-11"><h4 class="text-white pull-left">Your Brand</h4></div>
+							</div>
+						</div>
+						<div class="col"><h3 class="text-white font-weight-bold" id="todaysDate"></h3></div>
+						<div class="col text-right"><image class="btn" width="55" src="img/iconmonstr-fullscreen-12-240.png" onclick="toggleFullScreen()"></image></div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+	<!-- Center iFrame Content -->
+		<div role="main" class="container-fluid">
+				<iframe id="myframe" name="myframe" class="border border-dark" src="https://www.bing.com" style="width: 100%; height: 88vh; position: relative; padding: 0px; margin-top: 60px;" allowfullscreen></iframe>
+		</div>
+
+	<!-- Fixed Bottom Footer / Navigation -->
+		<footer class="footer">
+			<ul class="nav nav-pills bg-secondary fixed-bottom justify-content-center" role="tablist">
+					<li class="nav-item">
+						<a class="nav-link btn-success btn-lg mr-3" href="https://www.bing.com" target="myframe">Home</a>
+					</li>
+					<li class="nav-item dropup">
+							<a class="nav-link dropdown-toggle btn-success btn-lg mr-3" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">TV/Movies</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+									<a class="dropdown-item" href="https://www.popcornflix.com" target="myframe">PopcornFlix</a>
+									<a class="dropdown-item" href="https://www.snagfilms.com" target="myframe">SnagFilms</a>
+									<a class="dropdown-item" href="http://www.classiccinemaonline.com" target="myframe">ClassicCinema</a>
+									<a class="dropdown-item" href="https://www.freemoviescinema.com/" target="myframe">FreeMoviesCinema</a>
+									<a class="dropdown-item" href="https://pluto.tv/watch/" target="myframe">Pluto.TV</a>
+							</div>
+					</li>
+					<li class="nav-item dropup">
+							<a class="nav-link dropdown-toggle btn-success btn-lg mr-3" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Music</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+									<a class="dropdown-item" href="https://www.113.fm/on-air" target="myframe">113 FM Radio</a>
+									<a class="dropdown-item" href="https://onlineradiobox.com/us/" target="myframe">OnlineRadioBox</a>
+									<a class="dropdown-item" href="https://tunein.com/radio/local/" target="myframe">Tune In</a>
+							</div>
+					</li>
+					<li class="nav-item dropup">
+							<a class="nav-link dropdown-toggle btn-success btn-lg mr-3" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Books</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+									<a class="dropdown-item" href="https://openlibrary.org/" target="myframe">Open Library</a>
+									<a class="dropdown-item" href="http://www.read.gov/books/" target="myframe">Read.Gov</a>
+							</div>
+					</li>
+					<li class="nav-item dropup">
+							<a class="nav-link dropdown-toggle btn-success btn-lg mr-3" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Reference</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+									<a class="dropdown-item" href="https://edu.gcfglobal.org/en/" target="myframe">GCF Learn Free</a>
+									<a class="dropdown-item" href="https://en.wikipedia.org/wiki/Main_Page" target="myframe">Wikipedia</a>
+									<a class="dropdown-item" href="https://www.merriam-webster.com/" target="myframe">Merriam-Webster</a>
+							</div>
+					</li>
+			</ul>
+		</footer>
+	</body>
+</html>
