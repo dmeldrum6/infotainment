@@ -28,14 +28,16 @@
 			<div class="nav fixed-top bg-secondary">
 				<div class ="container-fluid ">
 					<div class="row">
-						<div class="col">
+						<div class="col-md-9">
 							<div class="row">
 								<div class="col-md-1"><image width="35" src="img/iconmonstr-cube-6-240.png"/></div>
-								<div class="col-md-11"><h4 class="text-white pull-left">Your Brand</h4></div>
+								<div class="col-md-2 text-left"><h4 class="text-white pull-left">Your Brand</h4></div>
+								<div class="col-md-9 text-center"><h3 class="text-white font-weight-bold" id="todaysDate"></h3></div>
 							</div>
 						</div>
-						<div class="col"><h3 class="text-white font-weight-bold" id="todaysDate"></h3></div>
-						<div class="col text-right"><image class="btn" width="55" src="img/iconmonstr-fullscreen-12-240.png" onclick="toggleFullScreen()"></image></div>
+						<div class="col-md-1 text-right"><button class="btn-success" onclick="cycleBackground()">Background</button></div>
+						<div class="col-md-1 text-right"><button class="btn-success" onclick="cycleButtons()">Buttons</button></div>
+						<div class="col-md-1 text-right"><image class="btn" width="55" src="img/iconmonstr-fullscreen-12-240.png" onclick="toggleFullScreen()"></image></div>
 					</div>
 				</div>
 			</div>
